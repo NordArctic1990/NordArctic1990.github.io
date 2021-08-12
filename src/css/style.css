@@ -1,0 +1,75 @@
+body{
+    font-family: Arial, sans-serif;
+}
+nav{
+    width: 100%;
+    height: 60px;
+    background: #344051
+}
+.logo{
+    font-size: 28px;
+    color: whitesmoke;
+    line-height: 60px;
+    padding-left: 388px;
+    float: left;
+}
+.menu{
+    float:left;
+    padding-left: 430px;
+}
+.menu li{
+    float:left;
+    line-height: 30px;
+    color:whitesmoke;
+    margin-right: 40px;
+    font-size: 16px;
+    text-transform: uppercase;
+   
+}
+.main{
+    width: 100%;
+    padding-top: 1px;
+    height: calc(100% - 60px);
+    background: url(../img/%D0%9F%D0%B0%D1%80%D0%B5%D0%BD%D1%8C.png) 90% 100%/auto 85% no-repeat, url(../img/%D1%84%D0%BE%D0%BD.jpg) center/cover no-repeat;
+}
+.title__container{
+    width: 100%;
+    padding-left: 10px;
+    padding-top: 10%;
+    margin: 432px 0px 0px 404px;
+    color: 2c384a;       
+}
+.title__container h1{
+    font-size: 60px;
+    font-weight: bold;
+}
+.title__container h4{
+    margin-top: 40px;
+    font-size: 22px;
+    color: #79818d;
+}
+.title__container input{
+    height: 40px;
+    text-align: center;
+    border: 2px solid #6d7682;
+    background: none;
+    border-radius: 5px;
+    color: #6d7682;
+    font-size: 13px;
+    padding: 0px 16px;
+    margin: 58px 14px 0px 14px
+}
+.person{
+  height: 40px;
+    text-align: center;
+    background: none;
+    color: black;
+    font-size: 13px;
+    padding: 0px 16px;
+    margin: 58px 14px 0px 14px;  
+}
+.download{
+   text-align: center;
+    border-radius: 1px;
+    color: black
+}

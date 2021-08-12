@@ -7,6 +7,7 @@
     <meta name="robots" content="all">
     <meta property="og:title" content="Это мой первый сайт">
     <title>Мой первый сайт</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -25,17 +26,19 @@
        </nav>   
    </header>
    
-   <div class="main"></div> 
+   <div class="main"> 
+   <div class="title__container">
    <h1>Привет <br>Я Олег Фарафонов</h1>
    <h4>Найчинающий веб-разработчик</h4>
    <input type="submit" value="Обо мне">
-    <input type="submit" value="Мои работы">
-   <div class="main">ОБО МНЕ</div>
-       <img src="img/IMG-20170921-WA0013.jpeg" alt="Упс, картинка не загрузилась" width="150px" height="250px">
+    <input type="submit" value="Мои работы"></div>
+    </div>
+   <div class="person">ОБО МНЕ
    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae adipisci, quaerat explicabo nulla consectetur? Voluptate quod, voluptas saepe eveniet. Impedit voluptatem rerum vel deserunt possimus voluptate reprehenderit minus quasi, pariatur nisi, maiores, dicta.</p>
    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum optio doloremque et itaque natus nobis libero nihil rem facere harum veritatis dolor facilis assumenda repellendus sed numquam quas pariatur nam, adipisci dignissimos? Cumque.</p>
-   <a href="Путь для скачивания резюме" download=""><button>Скачать резюме</button></a>
-   <div class="main">ЧТО Я УМЕЮ</div>
+   </div>
+   <a class="download"href="Путь для скачивания резюме" download=""><button>Скачать резюме</button></a>
+   <div class="skills">ЧТО Я УМЕЮ</div>
    <div class="service-item">
        <p><img src="img/2.img.bmp" alt="Упс, картинка не прогрузилась"/></p>
        <p class="caption">Веб дизайн</p>
@@ -56,27 +59,25 @@
        <p class="caption">Маркетинг</p>
        <p class="caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus sunt hic impedit error fugit.</p>
    </div>
-  <div class="main">КЕЙСЫ</div>
+  <div class="caise">КЕЙСЫ</div>
    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In dicta porro ipsum ab nisi possimus!</div>
   <img src="img/site.img.bmp" alt="Упс, картинка не прогрузилась"width="950px" height="550px">
-  <div class="caption"><h3>CLIENT: <br><h6>ООО "Игромания"</h6></h3></div>
+  <div class="caption"><h3>CLIENT:</h3> <h6>ООО "Игромания"</h6></div>
   <div class="caption"><h3>WEBSITE: <br><h6>www.igromania.ru</h6></h3></div>
   <button><a href="http://www.igromania.ru">Посетить сайт</a></button>
   <div><h3>Название проекта</h3></div>
-  <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate beatae deserunt asperiores voluptatum voluptatibus. Quam consectetur quis voluptates ullam repudiandae doloremque harum vitae, sed laudantium iste minima delectus beatae a rem! Repudiandae voluptas corrupti, voluptate.</div>
+  <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt saepe alias cumque, explicabo a aspernatur.</div>
   
   <div>
-  <div class="name"><h2>Расчёт стоимости работ</h2></div>
-  <div class="name"><h4>Тип сайта</h4></div>
+  <div class="calculator"><h2>Расчёт стоимости работ</h2></div>
+  <div ><h4>Тип сайта</h4></div>
   <select name="list1" id="list">
-     <option value="Выберите пункт" selected="" disabled>Выберите пункт</option>
       <option value="Сайт-визитка">Сайт-визитка</option>
        <option value="Лендинг-сайт">Лендинг-сайт</option>
         <option value="Интернет-магазин">Интернет-магазин</option>
   </select>
-  <div class="name"><h4>Дизайн</h4></div>
+  <div><h4>Дизайн</h4></div>
   <select name="list2" id="list">
-     <option value="Выберите пункт" selected="" disabled>Выберите пункт</option>
       <option value="Жесткий">Жесткий</option>
        <option value="Гибкий">Гибкий</option>
         <option value="Комбинированный">Комбинированный</option>
@@ -84,9 +85,8 @@
           <option value="Интерфейсный">Интерфейсный</option>
            <option value="Динамический">Динамический</option>
   </select>
-  <div class="name"><h4>Адаптивность</h4></div>
+  <div><h4>Адаптивность</h4></div>
   <select name="list3" id="list">
-     <option value="Выберите пункт" selected="" disabled>Выберите пункт</option>
       <option value="Адаптивный макет">Адаптивный макет</option>
        <option value="Отзывчивый макет">Отзывчивый макет</option>
         <option value="Смешанный макет">Смешанный макет</option>
@@ -94,11 +94,12 @@
         </div>
         
   <h2>Немного статистики</h2>
-   <div class="box">120 счастливых клиентов</div>
-   <div class="box">4600 часов работы</div>
-   <div class="box">340 проектов завершено</div>
-   <div class="box">23 награды получено</div>
-
+  <div class="box">
+   <div>120 счастливых клиентов</div>
+   <div>4600 часов работы</div>
+   <div>340 проектов завершено</div>
+   <div>23 награды получено</div>
+</div>
    <h2>Отзывы</h2>
    <div class="container">
       <img src="img/1.img.bmp" alt="Упс, картинка не прогрузилась"width="250px" height="250px">
@@ -108,14 +109,12 @@
    
    <div class="title_inner"><h2>МОИ КОНТАКТЫ</h2></div>
   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic assumenda ab at minima suscipit dolorem nostrum sunt commodi, dicta ducimus.</p>
-<div class="icon"><span class="ion ion-email"></span></div>
-<div class="name">Email</div>
+<p>Email</p>
 <p><a href="farafonov270490@gmail.com">farafonov270490@gmail.com</a></p>
-<div class="icon"><span class="ion ion-ios-location"></span></div>
-<div class="name">Адрес: <br>Россия, Норильск</div>
+<div>Адрес: <br>Россия, Норильск</div>
 <input id="name" name="name" placeholder="Имя" required="" type="text" value="">
 <input id="email" name="email" placeholder="E-mail" required="" type="text" value="">  
-<div class="group-val ct-gr">
+<div class="massage_for_me">
 <textarea id="message" name="message" placeholder="Сообщение" required=""></textarea></div>
 <input class="btn fill" id="submit" name="submit" type="submit" value="Отправить сообщение">
 <footer>

@@ -61,29 +61,38 @@ nav{
 .person{
    text-align: center;
    background: none;
-   margin-top: 50px;
+   width: 100%;
+    height: 520px;
 }
 .person h2{
     font-size: 25px;
     color: #263244;
     font-weight: bold;
+    margin-top: 105px;
 }
 [value="1"]{
+    display: block;
     background: none;
-    margin: 20px 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px;
 }
 [value="2"]{
+    display: block;
     background: none;
-    margin: 20px 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px;
 }
 .person p{
    display: block;
-    max-width: 50%;
+    width: 700px;
    font-size 20px;
    color: #3f495a;
    background: none;
    padding: 20px;
-    white-space:normal;
+    margin-left: auto;
+    margin-right: auto;
 }
 .person a{
    text-align: center;
@@ -96,31 +105,42 @@ nav{
 }
 .skills{
     text-align: center;
-    margin-top: 50px;
-    background-image: url(../img/%D0%BA%D0%B0%D1%80%D1%82%D0%B8%D0%BD%D0%BA%D0%B0%20%D1%84%D0%BE%D0%BD%D0%B0%20%D0%9E%D0%91%D0%9E%20%D0%9C%D0%9D%D0%95.png)center/cover no-repeat;
+    width: 100%;
+    height: 525px;
+    background: url(../img/%D0%BA%D0%B0%D1%80%D1%82%D0%B8%D0%BD%D0%BA%D0%B0%20%D1%84%D0%BE%D0%BD%D0%B0%20%D0%9E%D0%91%D0%9E%20%D0%9C%D0%9D%D0%95.png)center/cover no-repeat;
 }
 .skills h2{
    font-size: 25px;
     color: #263244;
     font-weight: bold;
+    padding-top: 105px;
 }
-.service-item{
-   text-align: center;
-   background: none;
-   margin-top: 20px;
+.skills div{
+   display: block;
+   float: left;
+    text-align: center;
+   max-width: 210;
+    height: 155px;
+   padding-top: 20px;
+    padding: 85px;
+    margin-left: auto;
+    margin-right: auto;
 }
-.serice-item p{
-    display: block;
-   width: 100px; 
-}
-.serice-item h5{
-    padding-top: 10ps;
+.skills h5{
+    padding-top: 25ps;
     font-size: 20px;
+    color: #d17700;
+}
+.skills p{
+    font-size: 15px;
+    width: 210px;
+    height: 50px;
 }
 .caise{
      text-align: center;
    background: none;
-   margin-top: 50px;
+    width: 100%;
+    height: 1100px;
 }
 .caise h2{
    font-size: 25px;
@@ -131,48 +151,90 @@ nav{
 .caise img{
     padding-top: 20px;
 }
-.caise p{
+.caise div{
     font-size: 16px;
     color:#263244;
+    margin-top: 20px;
     padding-top: 20px;
 }
 .calculator{
     text-align: center;
-    margin-top: 50px;
+    width: 890px;
+    height: 800px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .calculator h2{
     font-size: 25px;
     color: #263244;
     font-weight: bold;
+    padding-top: 100px;
+}
+.calculator h4{
+    margin-top: 30px;
+    font-size: 20px;
+}
+.calculator select{
+    width: 890px;
+    height: 55px;
+    border: 1px solid#000;
+    opacity: 1;
+    margin-top: 25px;
 }
 .stats{
    text-align: center;
-    margin-top: 50px;
-    background-image: url(../img/%D1%84%D0%BE%D0%BD%20%D1%81%D1%82%D0%B0%D1%82%D0%B8%D1%81%D1%82%D0%B8%D0%BA%D0%B8.jpg)center/cover no-repeat;
+    width: 100%;
+    height: 495px;
+    background: url(../img/%D1%84%D0%BE%D0%BD%20%D1%81%D1%82%D0%B0%D1%82%D0%B8%D1%81%D1%82%D0%B8%D0%BA%D0%B8.jpg)center/cover no-repeat;
 }
 .stats h2{
     font-size: 25px;
     color: #263244;
     font-weight: bold;
+    margin-top: 30px;
+    padding-top: 30px;
+}
+.stats div{
+    display: block;
+    float: left;
+    color: #323e4f;
+    font-size: 20px;
+    width: 170px;
+    padding-top: 88px;
+    padding: 180px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.stats h2{
+    font-size: 25px
 }
 .about_me{
     text-align: center;
    background: none;
-   margin-top: 50px; 
+    width: 100%;
+    height: 590px;
 }
 .about_me h2{
+     text-align: center;
     font-size: 25px;
     color: #263244;
     font-weight: bold;
+      margin-top: 50px; 
 }
 .about_me img{
-    padding-top: 20px;
+    padding-top: 60px;  
+}
+.abot_me p{
+    display: block;
+    max-width:  690px;
+    font-size: 25px;
+    padding-top: 40px;
 }
 .title_inner{
     text-align: center;
     color: white;
    background: url(../img/%D0%9C%D0%BE%D0%B8%20%D0%BA%D0%BE%D0%BD%D1%82%D0%B0%D0%BA%D1%82%D1%8B.jpg)center/cover no-repeat;
-    height: 500px;
+    height: 805px;
    margin-top: 50px;
      padding: 15px;
 }
@@ -182,24 +244,70 @@ nav{
     padding-top: 30px;
 }
 .title_inner p{
-    font-size: 20px;
-    padding: 5px;
+    font-size: 16px;
+    padding-top: 30px;
+}
+.contacts{
+    width: 100%;
+    height: 100px;
+}
+.contacts p{
+    display: block;
+    width: 155px;
+    height: 70px;
+    float: left;
+    margin-left: auto;
+    margin-right: auto;
 }
 .title_inner a{
     color: white;
     padding-top: 10px;
+}
+
+#name{
+    width: 350px;
+    height: 35px;
+    margin: 15px;
+    opacity: 0.8;
+    padding-left: 15px;
+}
+#email{
+    width: 350px;
+    height: 35px; 
+    margin: 15px;
+    opacity: 0.8;
+    padding-left: 15px;
 }
 .btn_fill{
     color: white;
     border: 2px solid #000;
     border-radius: 5px;
     border-color: white;
-    padding: 5px;
+    margin-top: 30px;
+    padding: 15px;
     background: none;
+}
+.massage_for_me{
+    margin-top: 20px;
+    opacity: 0.8;
+    margin-left: auto;
+    margin-right: auto;
+}
+.massage_for_me textarea{
+     width: 730px;
+    height: 95px;
+    padding-top: 5px;
+    padding-left: 5px;
+}
+.social{
+    margin-top: 75px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 55px;
 }
 footer{
     width: 100%;
-    height: 300px;
+    height: 350px;
     text-align: center;
     
 }
@@ -210,6 +318,7 @@ footer h6{
     font-size: 16px;
     color: white;
     line-height: 60px;
-    padding-left: 388px;
     background-color: #344051;
+    margin-left: auto;
+    margin-right: auto;
 }

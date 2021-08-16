@@ -292,16 +292,19 @@ nav{
     padding-top: 30px;
 }
 .contacts{
-    width: 100%;
+    width: 51;
     height: 100px;
+    margin: 30px auto;
+    margin-left: 450px;
 }
-.contacts p{
+.contacts div{
     display: block;
     width: 155px;
     height: 70px;
     float: left;
-    margin-left: auto;
+    margin-left: 130px;
     margin-right: auto;
+    padding-top: 20px;
 }
 .title_inner a{
     color: white;

@@ -5,42 +5,81 @@ nav{
     width: 100%;
     height: 60px;
     background: #344051;
+    position: fixed;
+    z-index: 1;
 }
 .logo{
     font-size: 28px;
-    color: whitesmoke;
+    color: white;
     line-height: 60px;
-    padding-left: 388px;
+    padding-left: 188px;
     float: left;
+    -webkit-animation: coming 3s ease;
+    -o-animation: coming 3s ease;
+    animation: coming 3s ease;
 }
 .menu{
     float:left;
-    padding-left: 430px;
+    padding-left: 330px;
 }
 .menu li{
     float:left;
     line-height: 30px;
-    color:whitesmoke;
+    color: white;
     margin-right: 40px;
     font-size: 16px;
     text-transform: uppercase;
     padding-top: 18px;
+    -webkit-animation: topshift 0.8s ease forwards;
+    -o-animation: topshift 0.8s ease forwards;
+    animation: topshift 0.8s ease forwards;
+    opacity: 0;
+}
+.menu li a{
+    transition: all 0.1s;
+    color: white;
+    transform: scale(1);
+    display: inline-block;
+}
+.menu li a:visited{
+    color: white;
+}
+.menu li a:hover{
+    color: orangered;
+       
+}
+.menu li a:active{
+    transform: scale(1.1);
+}
+main{
+    width: 100%;
+    height: 100%;
 }
 .main{
     width: 100%;
     padding-top: 10px;
-    height: calc(100% - 60px);
+    height: 100%;
     background: url(../img/%D0%9F%D0%B0%D1%80%D0%B5%D0%BD%D1%8C.png) 90% 100%/auto 85% no-repeat, url(../img/%D1%84%D0%BE%D0%BD.jpg) center/cover no-repeat;
 }
 .title__container{
     float:left; 
     text-align: center;
-    margin: 432px 0px 0px 404px;
-    color: 2c384a;       
+    margin: 182px 0px 0px 104px;
+    color: #2c384a;
+    opacity: 0;
+    -webkit-animation: titlemove 1s ease forwards;
+    -o-animation: titlemove 1s ease forwards;
+    animation: titlemove 1s ease forwards;
+    -webkit-animation-delay: 2.4s;
+    -o-animation-delay: 2.4s;
+    animation-delay: 2.4s;
 }
 .title__container h1{
     font-size: 60px;
     font-weight: bold;
+}
+.title__container h1::first-letter{
+    color: orangered;
 }
 .title__container h4{
     margin-top: 40px;
@@ -56,7 +95,62 @@ nav{
     color: #6d7682;
     font-size: 13px;
     padding: 0px 16px;
-    margin: 58px 14px 0px 14px
+    margin: 58px 14px 0px 14px;
+    transition: all 0.2s;
+    transform: scale(1);
+}
+.title__container input:hover{
+    background: orangered;
+    color: #344051;
+}
+.title__container input:active{
+    transform: scale(1.1);
+}
+@keyframes coming{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@keyframes topshift{
+    from{
+        opacity: 0;
+        margin-top: -80px;
+    }
+    to{
+        opacity: 1;
+        margin-top: 0px;
+    }
+}
+@keyframes titlemove{
+    from{
+        opacity: 0;
+        margin-left: -1000px;
+    }
+    to{
+        opacity: 1;
+        margin-left: 104px;
+    }
+}
+.menu li a:active{
+    transform: scale(1.1);
+}
+.menu li:nth-child(2){
+    animation-delay: 0.4s;
+}
+.menu li:nth-child(3){
+    animation-delay: 0.8s;
+}
+.menu li:nth-child(4){
+    animation-delay: 1.2s;
+}
+.menu li:nth-child(5){
+    animation-delay: 1.6s;
+}
+.menu li:nth-child(6){
+    animation-delay: 2s;
 }
 .person{
    text-align: center;
@@ -86,6 +180,7 @@ nav{
 }
 .person p{
    display: block;
+    text-align: justify;
     width: 700px;
    font-size 20px;
    color: #3f495a;
@@ -93,15 +188,48 @@ nav{
    padding: 20px;
     margin-left: auto;
     margin-right: auto;
+    -webkit-animation: scooter 5s linear;
+    -o-animation: scooter 5s linear;
+    animation: scooter 5s linear;
+    animation-iteration-count: infinite;
 }
-.person a{
+@keyframes scooter{
+    0%{
+        opacity: 0.7;
+        text-shadow: 0 0 3px black;
+    }
+    25%{
+        opacity: 1;
+        text-shadow: 0 0 10px black;
+    }
+    50%{
+        opacity: 0.7;
+        text-shadow: 0 0 3px black;
+    }
+    75%{
+        opacity: 1;
+        text-shadow: 0 0 10px black;
+    }
+    100%{
+        opacity: 0.7;
+        text-shadow: 0 0 3px black;    
+    }
+}
+.person input{
    text-align: center;
-   background: none;
    margin-top: 20px;
    border: 2px solid #3f495a;
    border-radius: 5px;
    border-color: #3f495a;
    padding: 2px 2px;
+}
+.person input:hover{
+    background: orangered;
+    color: #3f495a;
+}
+.person input:active{
+    background: orangered;
+    transform: scale(1.2);
 }
 .skills{
     text-align: center;
@@ -118,22 +246,65 @@ nav{
 .skills div{
    display: block;
    float: left;
-    text-align: center;
-   max-width: 210;
-    height: 155px;
-   padding-top: 70px;
-    margin-left: 230px;;
+    text-align:center;
+  width: 260px;
+    height: 250px;
+   padding-top: 30px;
+    padding-bottom: 10px;
+    margin-left: 60px;
     margin-right: auto;
 }
+.skills p{
+    text-align: justify;
+}
 .skills h5{
-    padding-top: 25ps;
+    margin-top: 30px;
     font-size: 20px;
     color: #d17700;
+    -webkit-animation: skills 10s linear;
+    -o-animation: skills 10s linear;
+    animation: skills 10s linear;
+    animation-iteration-count: infinite;
+}
+@keyframes skills{
+    0%{
+     color:red;
+    }
+    10%{
+     color:orange;
+    }
+    20%{
+      color:yellow;
+    }
+    30%{
+        color: green;
+    }
+    40%{
+        color:blue;
+    }
+    50%{
+        color:purple;
+    }
+    60%{
+        color:black;
+    }
+    70%{
+        color:brown;
+    }
+    80%{
+        color:darkorange;
+    }
+    90%{
+        color:darkred;
+    }
+    100%{
+        color:forestgreen;
+    }
 }
 .skills p{
-    font-size: 15px;
-    width: 210px;
-    height: 50px;
+    display: block;
+    font-size: 16px;
+    margin-top: 25px;
 }
 .caise{
    text-align: center;
@@ -159,68 +330,93 @@ nav{
     font-size: 16px;
     color:#263244;
     margin-top: 10px;
-    margin-left: 230px;
+    margin-left: 130px;
     padding-top: 10px;
 }
 .caise button{
     background: #eee;
     width: 100px;
     height: 35px;
-    border: 1px solid#000;
+    border: 2px solid#000;
     border-radius: 5px;
     margin-top: 20px;
-    
+}
+.caise button:hover{
+    background: orangered;
+    color: #263244;
+    }
+.caise button:active{ 
+    background: orangered;
+    transform: scale(1.2);
 }
 .project{
     display: block;
-    width: 1200px;
+    width: 900px;
     margin-top: 20px;
-    margin-left: 200px;
+    margin-left: 400px;
     padding-top: 20px;
-    padding-left: 100px;
 }
 .project h3{
     text-align: justify;
     font-size: 25px;
     color: #263244;
-    padding-left: 50px;
 }
-.project p{
+.object{
     text-align: justify;
+    max-width: 850px;
     font-size: 16px;
     white-space: normal;
-    padding-left: 50px;
+    color: #263244;
+}
+.object::first-letter{
+    color: orangered;
+        font-size: 25px;
 }
 .calculator{
     text-align: center;
-    width: 890px;
-    height: 800px;
+    outline: 5px solid#000;
+    width: 1000px;
+    height: 700px;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 20px;
+background: #ff7400; /* Old browsers */
+background: -moz-linear-gradient(top, #ff7400 0%, #ff7400 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #ff7400 0%,#ff7400 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #ff7400 0%,#ff7400 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff7400', endColorstr='#ff7400',GradientType=0 );
 }
 .calculator h2{
     font-size: 25px;
-    color: #263244;
+    color: black;
     font-weight: bold;
-    padding-top: 100px;
+    padding-top: 50px;
 }
 .calculator h4{
     margin-top: 30px;
     font-size: 20px;
 }
 .calculator select{
+    color: #ff7400;
     width: 890px;
     height: 55px;
     border: 1px solid#000;
     opacity: 1;
     margin-top: 25px;
-    background: #eee;
+    background: #323e4f;
+}
+.calculator select option{
+    font-size: 16px;
+    color: #000;
+    background: #ff7400;
 }
 .calculator p{
     font-size: 25px;
     width: 890px;
     height: 55px;
     margin-top: 30px;
+    margin-left: 53px;
+    padding: 15px 20px;
     text-align: left;
 }
 .calculator span{
@@ -231,6 +427,7 @@ nav{
     width: 100%;
     height: 495px;
     background: url(../img/%D1%84%D0%BE%D0%BD%20%D1%81%D1%82%D0%B0%D1%82%D0%B8%D1%81%D1%82%D0%B8%D0%BA%D0%B8.jpg)center/cover no-repeat;
+    background-attachment: fixed;
 }
 .stats h2{
     font-size: 25px;
@@ -246,17 +443,17 @@ nav{
     font-size: 20px;
     width: 170px;
     padding-top: 88px;
-    margin-left: 230px;
+    margin-left: 130px;
     margin-right: auto;
 }
 .stats h2{
     font-size: 25px
 }
 .about_me{
-    text-align: center;
+     text-align: center;
    background: none;
     width: 100%;
-    height: 590px;
+    height: 390px;
 }
 .about_me h2{
      text-align: center;
@@ -266,13 +463,23 @@ nav{
       margin-top: 50px; 
 }
 .about_me img{
-    padding-top: 60px;  
+    padding-top: 40px;
 }
 .about_me p{
+    text-align: justify;
     width:  600px;
     margin: auto;
     padding-top: 20px;
     color: #243042;
+}
+.about_me h5{
+    display: block;
+    padding-top: 20px;
+    color: #263244;
+}
+.about_me p::first-letter{
+    color: orangered;
+    font-size: 25px;
 }
 .title_inner{
     text-align: center;
@@ -292,19 +499,21 @@ nav{
     padding-top: 30px;
 }
 .contacts{
-    width: 51;
+    width: 999px;
     height: 100px;
     margin: 30px auto;
-    margin-left: 450px;
 }
 .contacts div{
     display: block;
-    width: 155px;
-    height: 70px;
     float: left;
-    margin-left: 130px;
-    margin-right: auto;
-    padding-top: 20px;
+    width: 333px;
+    height: 100px;
+}
+.contacts a:hover{
+    color: orangered
+}
+.contacts p:hover{
+    color: orangered
 }
 .title_inner a{
     color: white;
@@ -318,6 +527,7 @@ nav{
     opacity: 0.8;
     padding-left: 15px;
 }
+
 #email{
     width: 350px;
     height: 35px; 
@@ -325,6 +535,7 @@ nav{
     opacity: 0.8;
     padding-left: 15px;
 }
+
 .btn_fill{
     color: white;
     border: 2px solid #000;
@@ -334,24 +545,31 @@ nav{
     padding: 15px;
     background: none;
 }
+
+.btn_fill:hover{
+     background: orangered;
+    border-color: #263244;
+    color: #263244;
+    }
+.btn_fill:active{ 
+    background: orangered;
+    transform: scale(1.2);
+}
+
 .massage_for_me{
     margin-top: 20px;
     opacity: 0.8;
     margin-left: auto;
     margin-right: auto;
 }
+
 .massage_for_me textarea{
      width: 730px;
     height: 95px;
     padding-top: 5px;
     padding-left: 5px;
 }
-.social{
-    margin-top: 75px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 55px;
-}
+
 footer{
     width: 100%;
     height: 350px;
@@ -360,12 +578,14 @@ footer{
 }
 footer img{
     width: 100%;
+    height: 90%;
 }
 footer h6{
     font-size: 16px;
     color: white;
-    line-height: 60px;
-    background-color: #344051;
+    height: 10%;
+    background: #344051;
     margin-left: auto;
     margin-right: auto;
+    padding-top: 10px;
 }

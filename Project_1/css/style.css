@@ -92,13 +92,14 @@ nav{
 }
 .title__container input{
     height: 40px;
+    width: 120px;
+    margin-left: 10px;
     text-align: center;
     border: 2px solid #6d7682;
     background: none;
     border-radius: 5px;
     color: #6d7682;
-    font-size: 13px;
-    display: block;
+    font-size: 16px;
     transition: all 0.2s;
     transform: scale(1);
 }
@@ -134,7 +135,6 @@ nav{
     }
     to{
         opacity: 1;
-        margin-left: 150px;
     }
 }
 .menu li a:active{
@@ -157,18 +157,18 @@ nav{
 }
 .custom-css3{
     color: orangered;
+    font-size: 30px;
 }
 .person{
    text-align: center;
    background: none;
    width: 100%;
-    height: 520px;
 }
 .person h2{
     font-size: 25px;
     color: #263244;
     font-weight: bold;
-    margin-top: 105px;
+    margin-top: 50px;
 }
 [value="1"]{
     display: block;
@@ -241,19 +241,19 @@ nav{
     text-align: center;
     width: 100%;
     height: 525px;
-    margin-top: 50px;
+    margin-top: 30px;
     background: url(../img/%D0%BA%D0%B0%D1%80%D1%82%D0%B8%D0%BD%D0%BA%D0%B0%20%D1%84%D0%BE%D0%BD%D0%B0%20%D0%9E%D0%91%D0%9E%20%D0%9C%D0%9D%D0%95.png)center/cover no-repeat;
 }
 .skills h2{
    font-size: 25px;
     color: #263244;
     font-weight: bold;
-    padding-top: 105px;
+    padding-top: 50px;
 }
 .skl{
-   display: flex;
-   justify-content: space-around;
-   float: left;
+    margin-top: 50px;
+    max-width: 150px;
+    margin-left: 10%;
     text-align:center;
 }
 .skills p{
@@ -337,7 +337,7 @@ nav{
 }
 .caise button{
     background: #eee;
-    width: 100px;
+    width: 150px;
     height: 35px;
     border: 2px solid#000;
     border-radius: 5px;
@@ -376,9 +376,8 @@ nav{
 }
 .calculator{
     text-align: center;
+    width: 60%;
     outline: 5px solid#000;
-    width: 1000px;
-    height: 700px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 70px;
@@ -400,7 +399,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff7400', end
 }
 .calculator select{
     color: #ff7400;
-    width: 890px;
+    width: 60%;
     height: 55px;
     border: 1px solid#000;
     opacity: 1;
@@ -414,7 +413,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff7400', end
 }
 .calculator p{
     font-size: 25px;
-    width: 890px;
     height: 55px;
     margin-top: 30px;
     margin-left: 53px;
@@ -440,8 +438,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff7400', end
     padding-top: 30px;
 }
 .sts{
-    display: flex;
-    justify-content:space-around;
+    margin-top: 50px;
+    margin-left: 10%;
     float: left;
     color: #323e4f;
     font-size: 20px;
@@ -450,21 +448,20 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff7400', end
     text-align: center;
    background: none;
     width: 100%;
-    height: 390px;
+      margin-top: 50px;
 }
 .about_me h2{
      text-align: center;
     font-size: 25px;
     color: #263244;
     font-weight: bold;
-      margin-top: 50px;
+
 }
 .about_me img{
     padding-top: 40px;
 }
 .about_me p{
     text-align: justify;
-    width:  600px;
     margin: auto;
     padding-top: 20px;
     color: #243042;
@@ -482,9 +479,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff7400', end
     text-align: center;
     color: white;
    background: url(../img/%D0%9C%D0%BE%D0%B8%20%D0%BA%D0%BE%D0%BD%D1%82%D0%B0%D0%BA%D1%82%D1%8B.jpg)center/cover no-repeat;
-    height: 805px;
    margin-top: 50px;
-     padding: 15px;
+       height: 80%;
 }
 .title_inner h2{
     font-size: 25px;
@@ -496,15 +492,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff7400', end
     padding-top: 30px;
 }
 .contacts{
-    width: 999px;
-    height: 100px;
     margin: 30px auto;
+
 }
-.contacts div{
-    display: block;
-    float: left;
-    width: 333px;
-    height: 100px;
+.adress{
+    width: 100%;
+    display: flex;
+    justify-content:space-around;
 }
 .contacts a:hover{
     color: orangered
@@ -532,13 +526,18 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff7400', end
     opacity: 0.8;
     padding-left: 15px;
 }
-
+.to_me{
+    margin-top: 30px;
+margin-left: auto;
+margin-right: auto;
+}
 .btn_fill{
     color: white;
     border: 2px solid #000;
     border-radius: 5px;
     border-color: white;
     margin-top: 30px;
+    margin-bottom: 30px;
     padding: 15px;
     background: none;
 }

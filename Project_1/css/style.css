@@ -159,6 +159,7 @@ nav{
 .custom-css3{
     color: orangered;
     font-size: 30px;
+    padding-right: 10px;
 }
 .person{
    text-align: center;
@@ -247,7 +248,7 @@ nav{
    font-size: 25px;
     color: #263244;
     font-weight: bold;
-    padding-top: 20px;
+    padding-top: 30px;
 }
 .skl{
     padding-top: 50px;
@@ -396,13 +397,29 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff7400', end
     color: #000;
     background: #ff7400;
 }
-.calculator p{
+#sroki{
     font-size: 25px;
     height: 55px;
     margin-top: 15px;
 }
+#result1{
+    padding-left: 100px;
+}
+#stoimost{
+    font-size: 25px;
+    height: 55px;
+    margin-top: 15px;
+}
+#result2{
+    padding-left: 100px;
+}
 .calculator span{
     text-align: end;
+}
+.btn-secondary{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: orangered;
 }
 .stats{
    text-align: center;
@@ -457,7 +474,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff7400', end
 .title_inner{
     text-align: center;
     color: white;
-   background: url(../img/%D0%9C%D0%BE%D0%B8%20%D0%BA%D0%BE%D0%BD%D1%82%D0%B0%D0%BA%D1%82%D1%8B.jpg)center/cover no-repeat;
+   background: url(../img/fone_a.jpg)center/cover no-repeat;
    margin-top: 50px;
 }
 .title_inner h2{
@@ -468,10 +485,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff7400', end
 .title_inner p{
     font-size: 16px;
     padding-top: 30px;
-}
-.contacts{
-    margin: 30px auto;
-
 }
 .adress{
     width: 100%;
@@ -539,7 +552,12 @@ margin-right: auto;
     padding-top: 5px;
     padding-left: 5px;
 }
-
+.connect img{
+    width: 27px;
+    height: 26px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
 footer{
     width: 100%;
     text-align: center;

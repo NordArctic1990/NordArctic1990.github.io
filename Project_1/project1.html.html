@@ -78,7 +78,7 @@
   <section class="skills">
     <div class="container"><h2>ЧТО Я УМЕЮ</h2>
   <img src="img/%D0%A7%D0%B5%D1%80%D1%82%D0%B0%20%D0%B7%D0%B0%D0%B3%D0%BE%D0%BB%D0%BE%D0%B2%D0%BA%D0%B0.png" alt="Упс, картинка не загрузилась" value="1">
-  <div>
+  <div class="row">
     <div class="col-xxl-3 col-12 skl">
       <img src="img/%D0%BD%D0%BE%D1%83%D1%82.png" alt="Упс, картинка не прогрузилась"/>
       <h5>Веб дизайн</h5>
@@ -126,10 +126,12 @@
     <span class="visually-hidden">Следующий</span>
   </button>
 </div>
+<div class="row">
   <div class="col-xxl-3 col-md-12 client"><p>CLIENT: <br>ООО "Игромания"</p>
   <p>WEBSITE: <br>www.igromania.ru</p>
   <button><a href="http://www.igromania.ru">Посетить сайт</a></button></div>
   <div class="col-xxl-9 col-md-12 project"> <h3>Название проекта</h3> <p class="object">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium unde, architecto saepe cupiditate doloremque ratione qui dolore optio a nisi perferendis totam culpa fugiat at placeat perspiciatis numquam error fuga voluptatibus, laboriosam ullam autem voluptas inventore voluptate. Perferendis voluptatibus tempora, reiciendis exercitationem, debitis earum, voluptas quia fugit suscipit laudantium itaque velit repudiandae architecto veritatis culpa aperiam necessitatibus quos eveniet illo ut asperiores libero! Eligendi, tenetur harum optio, doloribus vero obcaecati natus, sit dolore commodi aliquam quos beatae, reiciendis illum! Iusto tenetur, qui cumque dolores culpa aliquam ex porro accusantium odio!</p></div>
+  </div>
   </div>
 </section>
 
@@ -168,10 +170,12 @@
     <div class="container">
       <h2>Немного статистики</h2>
    <p><img src="img/%D0%A7%D0%B5%D1%80%D1%82%D0%B0%20%D0%B7%D0%B0%D0%B3%D0%BE%D0%BB%D0%BE%D0%B2%D0%BA%D0%B0.png" alt="Упс, картинка не загрузилась" value="1"></p>
-   <div class="col-xxl-3 col-12 sts"><img src="img/%D1%83%D0%BB%D1%8B%D0%B1%D0%BA%D0%B0.png" alt="Упс, картинка не прогрузилась"> <h2>120</h2> счастливых клиентов</div>
+   <div class="row">
+     <div class="col-xxl-3 col-12 sts"><img src="img/%D1%83%D0%BB%D1%8B%D0%B1%D0%BA%D0%B0.png" alt="Упс, картинка не прогрузилась"> <h2>120</h2> счастливых клиентов</div>
    <div class="col-xxl-3 col-12 sts"><img src="img/%D1%87%D0%B0%D1%81%D1%8B%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%8B.png" alt="Упс, картинка не прогрузилась"><h2>4600</h2> часов работы</div>
    <div class="col-xxl-3 col-12 sts"><img src="img/%D0%B3%D0%B0%D0%BB%D0%BE%D1%87%D0%BA%D0%B0.png" alt="Упс, картинка не прогрузилась"><h2>340</h2> проектов завершено</div>
    <div class="col-xxl-3 col-12 sts"><img src="img/%D0%BA%D1%83%D0%B1%D0%BE%D0%BA.png" alt="Упс, картинка не прогрузилась"><h2>23</h2> награды получено</div>
+   </div>
    </div>
   </section>
 
@@ -189,19 +193,34 @@
   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic assumenda ab at minima suscipit dolorem nostrum sunt commodi, dicta ducimus.</p>
   <div class="contacts">
     <div class="adress">
-  <div><img src="img/%D0%B3%D0%B5%D0%BE.png" alt="">
+      <div class="row">
+  <div class="col-xxl-4 col-md-12"><img src="img/%D0%B3%D0%B5%D0%BE.png" alt="">
   <p>Россия, Норильск</p></div>
-  <div><img src="img/%D0%BA%D0%BE%D0%BD%D0%B2%D0%B5%D1%80%D1%82.png" alt="">
+  <div class="col-xxl-4 col-md-12"><img src="img/%D0%BA%D0%BE%D0%BD%D0%B2%D0%B5%D1%80%D1%82.png" alt="">
   <p><a href="farafonov270490@gmail.com">farafonov270490@gmail.com</a></p></div>
-  <div><img src="img/%D1%82%D1%80%D1%83%D0%B1%D0%B0.png" alt="">
+  <div class="col-xxl-4 col-md-12"><img src="img/%D1%82%D1%80%D1%83%D0%B1%D0%B0.png" alt="">
   <p>+7-999-999-99-99</p></div>
   </div>
+  </div>
   <div class="to_me col-2">ОСТАВЬТЕ МНЕ СООБЩЕНИЕ</div>
-  <p custom="1"><input id="name" name="name" placeholder="Имя" required="" type="text" value="">
-  <input id="email" name="email" placeholder="E-mail" required="" type="text" value=""></p>
-  <div class="massage_for_me">
-  <textarea id="message" name="message" placeholder="Сообщение" required=""></textarea></div>
-  <input class="btn_fill" id="submit" name="submit" type="submit" value="Отправить сообщение">
+  <div class="container">
+    <div class="row">
+  <div class="offset-2 col-4">
+    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Имя">
+  </div>
+  <div class="col-4">
+    <input type="email" class="form-control" id="exampleFormControlInput2" placeholder="E-mail">
+  </div>
+  </div>
+  </div>
+  <div class="container">
+  <div class="row">
+  <div class="offset-2 col-8">
+    <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Сообщение" rows="3"></textarea>
+  </div>
+  </div>
+  </div>
+  <button type="button" class="btn_fill">Отправить сообщение</button>
   </div>
 </section>
   <footer>

@@ -247,10 +247,10 @@ nav{
    font-size: 25px;
     color: #263244;
     font-weight: bold;
-    padding-top: 50px;
+    padding-top: 20px;
 }
 .skl{
-    margin-top: 50px;
+    padding-top: 50px;
 }
 .skills p{
     text-align: justify;
@@ -324,8 +324,7 @@ nav{
 .client{
     font-size: 16px;
     color:#263244;
-    margin-top: 20px;
-    padding-top: 20px;
+    padding-top: 30px;
 }
 .caise button{
     background: #eee;
@@ -343,8 +342,7 @@ nav{
     transform: scale(1.2);
 }
 .project{
-    margin-top: 20px;
-    padding-top: 20px;
+    padding-top: 30px;
 }
 .project h3{
     text-align: justify;
@@ -409,8 +407,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff7400', end
 .stats{
    text-align: center;
     width: 100%;
-    height: 495px;
-    margin-top: 20px;
+    margin-top: 50px;
     background: url(../img/%D1%84%D0%BE%D0%BD%20%D1%81%D1%82%D0%B0%D1%82%D0%B8%D1%81%D1%82%D0%B8%D0%BA%D0%B8.jpg)center/cover no-repeat;
     background-attachment: fixed;
 }
@@ -462,7 +459,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff7400', end
     color: white;
    background: url(../img/%D0%9C%D0%BE%D0%B8%20%D0%BA%D0%BE%D0%BD%D1%82%D0%B0%D0%BA%D1%82%D1%8B.jpg)center/cover no-repeat;
    margin-top: 50px;
-       height: 80%;
 }
 .title_inner h2{
     font-size: 25px;
@@ -479,37 +475,36 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff7400', end
 }
 .adress{
     width: 100%;
-    display: flex;
-    justify-content:space-around;
 }
 .contacts a:hover{
-    color: orangered
+    color: orange;
 }
 .contacts p:hover{
-    color: orangered
+    color: orange;
 }
 .title_inner a{
     color: white;
     padding-top: 10px;
 }
-
-#name{
-    width: 24%;
-    height: 35px;
-    margin: 10px;
-    opacity: 0.8;
-    padding-left: 15px;
-}
-
-#email{
-    width: 24%;
-    height: 35px;
-    margin: 10px;
-    opacity: 0.8;
-    padding-left: 15px;
-}
 .to_me{
+    color: orange;
+    margin-left: auto;
+    margin-right: auto;
+}
+#exampleFormControlInput1{
+    opacity: 0.8;
+    padding-left: 15px;
+    margin-top: 20px;
+}
+
+#exampleFormControlInput2{
+    opacity: 0.8;
+    padding-left: 15px;
+    margin-top: 20px;
+}
+#exampleFormControlTextarea1{
     margin-top: 30px;
+    opacity: 0.8;
 margin-left: auto;
 margin-right: auto;
 }
@@ -522,7 +517,6 @@ margin-right: auto;
     padding: 15px;
     background: none;
 }
-
 .btn_fill:hover{
      background: orangered;
     border-color: #263244;
@@ -549,20 +543,14 @@ margin-right: auto;
 footer{
     width: 100%;
     text-align: center;
-
 }
 footer img{
     width: 100%;
-    height: 60%;
 }
 footer h6{
     font-size: 16px;
     color: white;
-    height: 10%;
     background: #344051;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 10px;
 }
 @media (max-width:991px){
 .title__container, .title__container h4, .title__container input{

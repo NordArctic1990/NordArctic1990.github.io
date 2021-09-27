@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>calculator</title>
+</head>
+<body>
+        <div>Тип сайта:</div>
+        <select onchange="calc()" id="list1">
+            <option value="0">Выбрать</option>
+            <option value="5000">Сайт-визитка</option>
+            <option value="7000">Сайт-лендинг</option>
+            <option value="10000">Интернет-магазин</option>
+        </select>
+        <div>Вид дизайна</div>
+        <select onchange="calc()" id="list2">
+            <option value="0">Выбрать</option>
+            <option value="5000">Простой дизайн сайта</option>
+            <option value="7000">Сложный дизайн сайта</option>
+            <option value="10000">Эксклюзивный дизайн</option>
+        </select>
+        <div>Адаптивность</div>
+        <select onchange="calc()" id="list3">
+            <option value="0">Выбрать</option>
+            <option value="5000">Статическая верстка</option>
+            <option value="7000">Динамическая верстка</option>
+            <option value="10000">Адаптивная верстка</option>
+        </select>
+
+        <div>Сроки: <span id="result1">0</span> дн.</div>
+        <div>Стоимость сайта: <span id="result2">0</span> руб.</div>
+        <script src="practic.js"></script>
+    </body>
+</html>
